@@ -16,31 +16,6 @@ void MakeTest()
         s = s + to_string(i);
         s += ".inp";
         ofstream cout(s);
-        if (i <= 10)
-        {
-            int n = rd(1, 1e3);
-            cout << n << endl;
-            for (int i = 0; i < n; ++i)
-            {
-                int x = rd(-1e9, 1e9);
-                cout << x << " ";
-            }
-        }
-        else
-        {
-
-            int n = rd(1e5, 1e6);
-            if (i == 20)
-            {
-                n = 1e6;
-            }
-            cout << n << endl;
-            for (int i = 0; i < n; ++i)
-            {
-                int x = rd(-1e8, 1e8);
-                cout << x << " ";
-            }
-        }
     }
 }
 
